@@ -1,0 +1,398 @@
+\documentclass[hidelinks]{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{charter} % set main font
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\zcnote}[1]{{\bfseries \color{blue} #1}}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=false}
+
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{publications.bib}
+
+\vspace{-3pt}
+\name{\Large Z\MakeLowercase{huofan} J\MakeLowercase{ia}} % Your name
+% You can merge both of these into a single line if you do not have a website.
+\address{+1(217) 819-1162 \\ Durham, NC \\
+\href{mailto:zhuofan.jia@duke.edu}{zhuofan.jia@duke.edu} \\
+\href{https://www.linkedin.com/in/zhuofanjia/}{linkedin.com/in/zhuofanjia/}} 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-5pt}
+\begin{rSection}{E\MakeLowercase{ducation}}
+{\bf Duke University} \hfill {Aug 2023 -- Expected May 2028}\\
+{Ph.D. in Computer Science, advised by Prof. Jian Pei} \hfill {GPA: 4.0/4.0}\smallskip\\
+{\bf University of Illinois Urbana-Champaign (UIUC)} \hfill {Aug 2019 – Aug 2023}\\
+{Bachelor of Science in Computer Science and Mathematics (Dual Degree), Highest Honors} \smallskip\hfill {GPA: 4.0/4.0}\\
+{\bf Research Interests:}
+Large Language Models, Model Evaluation \& Benchmarking, Conversational AI, Data Privacy and Unlearning, Uncertainty-Aware Data Valuation, Responsible AI
+
+\end{rSection}
+
+\vspace{-5pt}
+\begin{rSection}{P\MakeLowercase{ublications}}
+\begin{enumerate}
+\itemsep -4pt {}
+\item Minxing Zhang, Yi Yang, \textbf{Zhuofan Jia}, Xuan Yang, Jian Pei, Yuchen Zang, Xingwang Deng, Xianglong Chen.
+\textit{\textsc{MPCEval}: A Benchmark for Multi-Party Conversation Generation}. Under Review KDD 2026. arXiv preprint arXiv:2603.04969.
+
+\item Minxing Zhang, \textbf{Zhuofan Jia}, Aritra Guha, Yaron Kanza,  Jian Pei, Divesh Srivastava.
+\textit{Scalable Private Information Management in Large Language Models}. Under Review VLDB 2026.
+
+\item \textbf{Zhuofan Jia} and Jian Pei.
+\textit{Shapley Value on Uncertain Data}. Under Review TKDE.
+arXiv preprint arXiv:2601.14543.
+
+
+\item Chenkai Wang, \textbf{Zhuofan Jia}, Hadjer Benkraouda, Cody Zevnik, Nicholas Heuermann, Roopa Foulger, Jonathan A. Handler, Gang Wang.
+\textit{VeriSMS: A Message Verification System for Inclusive Patient Outreach against Phishing Attacks}.
+  In Proceedings of CHI 2024.
+  
+\item Jeff Erickson, Jason Xia, Eliot Wong Robson, \textbf{Zhuofan Jia}, Tue Do, Aidan Tzur Glickman, Eric Jin, Jiwon Lee, Patrick Lin, Steven Pan, Samuel Ruggerio, Tomoko Sakurayama, Andrew Yin, Yael Gertner, Brad Solomon.
+\textit{Auto-graded Scaffolding Exercises for Theoretical Computer Science}.
+In ASEE Annual Conference 2023.
+\end{enumerate}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-5pt}
+\begin{rSection}{R\MakeLowercase{esearch} E\MakeLowercase{xperience}}
+
+% \textbf{Research Assistant}, AT\&T, advised by Prof. Jian Pei
+% \hfill May 2025 -- Present
+% \vspace{-5pt}
+% \begin{itemize}
+% \itemsep -7pt {}
+% \item Developed a novel kNN-LM framework that prevents private data leakage during embedding function training while enabling efficient removal of private information from datastores without costly LLM retraining, combining public LLM training with private datastore retrieval
+% \item Designed dynamic weighting scheme and privacy-preserving embedding functions using DPSGD, K-anonymity with differential privacy, and perturbation methods, achieving 0\% privacy violation across all test scenarios
+% \item Implemented 4 privacy-safe unlearning approaches with threshold optimization, demonstrating 17.5\% QA performance improvement (62.8\% to 73.8\%) compared to public-only embedding baselines while maintaining 96.2\% accuracy on public queries and achieving 20$\times$ perplexity improvement (27.9 to 1.35)
+% \item Evaluated framework on 200 synthetic author profiles and TinyQA benchmark, demonstrating superior performance over conventional differential privacy methods with minimal utility degradation on retained entities
+% \item Generated comprehensive training and evaluation datasets for all 4 proposed embedding methods (DPSGD, K-anonymity+DP, name perturbation, private info perturbation) and curated public QA test benchmarks for robust experimental validation
+% \item Led experimental design and analysis of results section, systematically analyzing QA performance across removal scenarios and conducting statistical significance testing to validate privacy preservation and utility maintenance claims
+% \end{itemize}
+
+\textbf{Evaluating Communication Failures in Multi-Agent LLM Systems}, Duke
+\hfill Feb 2026 -- Present
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {}
+\item Build evaluation frameworks to analyze communication failures in multi-agent LLM systems
+\item Propose local--global evaluation separating agent-level errors from system-level coordination failures
+\item Model agent interactions as dynamic graphs to analyze information flow, agent selection, and coordination
+\item Design interpretable metrics (coherence, consistency, efficiency, diversity) for failure diagnosis and supervision
+\item Develop automated detection methods to identify early-stage breakdowns for improving agent policies
+\end{itemize}
+
+\textbf{Hierarchical Topic Tree Generation for Long-Context LLMs}, Duke
+\hfill Feb 2026 -- Present
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {}
+\item Build an LLM-based system for online summarization and next-topic prediction in long conversations
+\item Construct reference hierarchical topic trees to provide structured supervision for fine-tuning
+\item Train LLMs to generate coherent topic sequences, improving long-horizon generation and reducing topic drift
+\item Develop multi-level generation pipelines to enhance consistency across local and global context
+\end{itemize}
+
+\textbf{\textsc{MPCEval}: A Benchmark for Multi-Party Conversation Generation}, Duke and Tanka
+\hfill Aug 2025 -- Feb 2026
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {} 
+% \item Develop an evaluation and benchmarking framework for multi-agent conversation generation
+% \item Design metrics for speaker prediction, coherence, novelty, and agenda progression to assess next-message quality
+% \item Implement embedding- and topic-based evaluators to measure thematic alignment and conversational flow
+% \item Conduct group-level and participation analysis on conversation datasets to quantify engagement and interaction
+% \item Analyze dominance patterns and message distributions to optimize data generation parameters and fairness
+
+\item Developed a unified benchmark for both next-turn prediction and global multi-party conversation evaluation
+\item Proposed task-specific metrics for speaker selection, semantic coherence, novelty, and agenda progression
+\item Designed embedding- and topic-based evaluators to assess thematic consistency and conversational structure
+\item Conducted group-level and participation analysis to characterize engagement dynamics in real conversations
+\item Analyzed dominance and message distribution patterns to inform fair evaluation and dataset curation
+
+\end{itemize}
+
+\textbf{Scalable Private Information Management in Large Language Models}, AT\&T and Duke
+\hfill May 2025 -- Jan 2026
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {}
+% \item Develop ML framework preventing private data leakage while enabling efficient information removal
+% \item Design weighting scheme with 4 privacy-preserving methods (DPSGD, K-anonymity+DP, perturbation approaches)
+% \item Achieve 0\% privacy violation with 17.5\% QA improvement over baselines and 20$\times$ perplexity gain
+% \item Generate datasets for all embedding approaches and led experimental evaluation across 200 profiles
+% \item Conduct significance testing to validate privacy preservation and utility maintenance across removal scenarios
+
+\item Proposed a kNN-LM architecture separating public training from private retrieval to support user-level data deletion
+\item Designed forgetness-enabling embedding perturbations to prevent private information leakage after removal
+\item Achieved 0\% privacy violations with 17.5\% QA accuracy gains and up to 20× perplexity reduction over baselines
+\item Built and evaluated private embedding databases across 200 user profiles to study privacy–utility tradeoffs
+\item Validated forgetness and accuracy stability via statistical and ablation analyses under varied removal rates
+\end{itemize}
+
+\textbf{Shapley Value on Uncertain Data}, Duke, advised by Prof. Jian Pei
+\hfill Feb 2024 -- Oct 2025
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {} 
+% \item Leading a research project to assess the importance of each data provider in cooperative machine learning
+% \item Designing economic incentives for each data provider in data markets to ensure fairness using game theory 
+% \item Proposing algorithms to approximate the distribution of Shapley values for data providers from data samples leveraging Monte Carlo and bootstrapping techniques
+% \item Develop a Shapley value framework to fairly evaluate data provider contributions in data markets
+% \item Design game theory-based incentives to optimize data sharing for machine learning
+% \item Model Shapley values as random variables, estimating expectation and variance to quantify uncertainty
+% \item Analyze Shapley properties under probabilistic data distributions
+% \item Apply sampling techniques to balance computational cost and accuracy in large-scale data markets
+
+% \item Developed fair allocation framework using Shapley values to price individual data provider contributions in markets
+% \item Designed game theory mechanisms to ensure equitable compensation and optimize data-sharing between providers
+% \item Modeled data valuation as a random variable, estimating unbiased expectation and variance to capture uncertainty
+% \item Analyzed fairness and stability of pricing under probabilistic distributions using theoretical and statistical methods
+% \item Achieved 95\% variance reduction and 97\% lower sampling cost with variance-adaptive Monte Carlo algorithms
+
+\item Proposed an uncertainty-aware Shapley framework for fair data attribution over probabilistic data distributions
+\item Characterized expected contribution and contribution stability via Shapley value expectation and variance analysis
+\item Derived unbiased Monte Carlo estimators for expectation and variance with guarantees under sampling noise
+\item Developed pooled and variance-adaptive stratified estimators to reduce sampling cost and estimation error
+\item Achieved up to 95\% variance reduction and 97\% fewer samples via adaptive Monte Carlo allocation algorithms
+
+\end{itemize}
+
+\vspace{-2pt}
+\textbf{VeriSMS}, UIUC, advised by Prof. Gang Wang
+\hfill Jun 2022 -- May 2023
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {} 
+% \item Developed a workflow to verify messages from institutions using \texttt{Twilio} to mitigate phishing attacks in outreach
+% \item Conducted 50 human-interactive interviews and surveys with an inclusive population, achieving 83\% accuracy in recognizing benign and malicious messages and an 85\% rating on usability
+% \item Authored findings as \textit{VeriSMS: A Message Verification System for Inclusive Patient Outreach against Phishing Attacks} at the 2024 ACM CHI Conference
+
+% \item Developed a Twilio-based verification system to authenticate institutional messages and reduce phishing attacks
+% \item Conducted A/B testing (N=15 exploratory, N=35 validation) to refine usability and detection effectiveness
+% \item Achieved 83\% phishing detection precision and 85\% usability rating using human-AI interaction techniques
+
+% \item Authored findings as \textit{VeriSMS: A Message Verification System for Inclusive Patient Outreach against Phishing Attacks} at the 2024 ACM CHI Conference
+
+% \item Designed an inclusive SMS-based message verification system to mitigate phishing while accommodating diverse user abilities
+
+% \item Developed a hybrid verification scheme balancing security, usability, and attacker cost under realistic threat models
+
+% \item Implemented a voice-assisted verification workflow requiring no apps or additional hardware to reduce access barriers
+
+% \item Conducted iterative human-subject studies (N=15 exploratory, N=35 validation) to evaluate understanding, trust, and usability
+
+% \item Demonstrated high phishing detection precision (83\%) and strong usability (SUS ≈ 79–85) in real-world scenarios
+
+
+\item Designed an inclusive SMS-based message verification system to mitigate phishing across diverse user abilities
+\item Developed a hybrid scheme combining per-message IDs and user-specific secrets to balance security and usability
+\item Implemented a voice-agent verification workflow requiring no apps or additional hardware for accessibility
+\item Conducted human-subject studies (15 exploratory, 35 validation) to evaluate understanding, trust, and usability
+\item Demonstrated high phishing detection precision (83\%) and strong usability (SUS $\approx$ 79--85) in controlled study
+
+
+\end{itemize}
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\vspace{-5pt}
+\begin{rSection}{P\MakeLowercase{rojects}}
+\vspace{-2pt}
+
+\textbf{Fine-Tuning and Evaluation of Small LLMs}, \textit{Large Language Models}
+\hfill Oct 2025 -- Dec 2025
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {} 
+\item Fine-tuned Gemma-3-270M using SFT, LoRA/QLoRA, and curriculum training for reasoning and factual QA tasks
+\item Implemented DPO/RLHF, self-correction, chain-of-thought, and RAG for improved generalization
+\item Integrated knowledge distillation from Gemma3-1B-IT and experiment with data synthesis for domain adaptation
+% \item Build modular PyTorch pipeline for multi-task evaluation on TriviaQA, ARC-C, and IFEval benchmarks
+\item Achieved 3.2× gain on TriviaQA exact match and 1.9× gain on ARC-C accuracy over the zero-shot baseline
+\end{itemize}
+
+\textbf{Benchmarking LLM Agents on False Hypothesis Rejection}, \textit{Large Language Model Agents}
+\hfill Oct 2025 -- Dec 2025
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {} 
+\item Built a benchmark to test LLM agents’ ability to reject, refine, or confirm hypotheses from real datasets
+\item Generated incrementally false hypotheses to measure agents’ sensitivity and specificity in falsification tasks
+\item Evaluated reasoning pipelines (ReAct, CoT, POPPER) on rejection accuracy, efficiency, and bias
+\item Proposed an auditable framework for assessing scientific reasoning and data-driven discovery in agentic models
+\end{itemize}
+
+% \textbf{Airbnb Price Prediction}, \textit{Machine Learning, Kaggle Competition}
+% \hfill Oct 2023 -- Dec 2023
+% \vspace{-5pt}
+% \begin{itemize}
+% \itemsep -7pt {} 
+% \item Developed a machine learning model to predict Airbnb listing prices using feature engineering and ensembling
+% \item Preprocessed data with pandas and scikit-learn, applying target encoding and extracting text-based features
+% \item Built a stacked ensemble model (random forest, ridge regression, and base learners) and tuned hyperparameters
+% \item Achieved 0.5698 CBCA, ranking top 12\% (20th/170), closely matching the leaderboard winner’s 0.5960 CBCA
+% \end{itemize}
+
+\end{rSection} 
+
+
+\vspace{-5pt}
+\begin{rSection}{P\MakeLowercase{rofessional} E\MakeLowercase{xperience}}
+\textbf{Software Engineer Intern}, HERE Technologies – Chicago, IL
+\hfill Jan 2023 -- May 2023
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {} 
+% \item Led research to determine the operational status of stores by analyzing time-series traffic patterns at road segments
+\item Led research on time-series traffic patterns at road segments to determine the operational status of stores, leveraging machine learning for pattern recognition
+% \item Orchestrated the testing and implementation of various models, including XGBoost, neural networks, and logistic regression, on \texttt{SageMaker}, achieving an F1 score exceeding 95\% with the best-performing model
+\item Developed and tested XGBoost, neural networks, and logistic regression models on \texttt{SageMaker} with F1 $>$ 95\%
+\item Implemented data obfuscation algorithms with \texttt{GeoPandas} that replace precise locations with broader geographic units, such as Traffic Analysis Zones, to enhance trip privacy
+ \end{itemize}
+
+
+
+\vspace{-2pt}
+\textbf{Machine Learning Engineer Intern}, Discovery Partners Institute -- Chicago, IL 
+\hfill Jan 2022 -- May 2023
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {} 
+% \item Implemented an ML-based medical search engine integrating proprietary sources and sensitive clinical information
+% \item Built a universal web crawler with \texttt{Beautiful Soup} and \texttt{Selenium} to extract desired HTML elements with a content classifier neural network in \texttt{PyTorch} and identified keywords using \texttt{BERT}
+% \item Integrated a textual similarity micro-service using \texttt{FastAPI} to calculate the relevance of each search result
+\item Developed an ML-powered medical search engine, integrating clinical data for enhanced information retrieval
+\item Built a scalable web crawler using \texttt{BeautifulSoup} to extract structured content for improved query relevance
+\item Implemented a content classification neural network in \texttt{PyTorch}, using BERT for keyword extraction
+\item Integrated a semantic search microservice with \texttt{FastAPI}, applying deep learning and NLP to rank and retrieve relevant results
+\end{itemize}
+
+\vspace{-2pt}
+ 
+\textbf{Software Developer}, UIUC, advised by Prof. Jeff Erickson
+\hfill Aug 2022 -- May 2023
+\vspace{-5pt}
+\begin{itemize}
+\itemsep -7pt {} 
+% \item Developed and deployed innovative auto-graded practice problems using Python, JavaScript, and React on the PrairieLearn platform, revolutionizing how 3,500+ students learn algorithms and data structures 
+\item Designed and deployed innovative auto-graded practice problems for algorithms and data structures using \texttt{Python}, \texttt{JavaScript}, and \texttt{React} on PrairieLearn platform, enhancing learning for 3,500+ students
+\item Developed scaffolded exercises to reinforce theoretical computer science concepts, improving student engagement
+% \item Published \textit{Auto-graded Scaffolding Exercises for Theoretical Computer Science} at the 2023 ASEE Annual Conference   
+\end{itemize}
+ 
+\end{rSection} 
+
+
+
+\vspace{-5pt}
+\begin{rSection}{P\MakeLowercase{atents}}
+\begin{enumerate}
+\itemsep -4pt {}
+\item Jingwei Xu, Weimin Huang, Bruce Bernhardt, Yuxin Guan, \textbf{Zhuofan Jia}, Jingbo Li. \textit{Dwell Time Modelling for Point of Interests}. US Patent Application 19/342094, filed September 26, 2025.
+\item Jingwei Xu, Weimin Huang, Bruce Bernhardt, Yuxin Guan, \textbf{Zhuofan Jia}, Jingbo Li. \textit{Trip Data Privacy Based on Obfuscation}. US Patent Application 19/313266, filed August 28, 2025.
+\end{enumerate}
+\end{rSection}
+ 
+%----------------------------------------------------------------------------------------
+% TECHNICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+\vspace{-5pt}
+\begin{rSection}{T\MakeLowercase{eaching} E\MakeLowercase{xperience}}
+
+\begin{itemize}
+\itemsep -7pt {}
+  \item \textbf{CompSci 516 Database Systems}, Teaching Assistant, Duke \hfill Spring 2025
+  \item \textbf{CompSci 316 Introduction to Databases}, Teaching Assistant, Duke \hfill Fall 2024
+  \item \textbf{CS 446 Machine Learning}, Course Assistant, UIUC \hfill Spring 2023
+  \item \textbf{CS 374 Intro to Algorithms \& Models of Computation}, Course Developer, UIUC \hfill Fall 2022 -- Spring 2023
+  \item \textbf{CS 125 Intro to Computer Science}, Course Assistant, UIUC \hfill Spring 2020 -- Fall 2020
+\end{itemize}
+
+\end{rSection} 
+
+
+
+
+
+\vspace{-5pt}
+\begin{rSection}{P\MakeLowercase{rofessional} S\MakeLowercase{ervices}}
+
+\begin{itemize}
+  \item \textbf{Reviewer} for ACM Transactions on Knowledge Discovery from Data (TKDD), 2025
+\end{itemize}
+\end{rSection} 
+
+\vspace{-5pt}
+\begin{rSection}{H\MakeLowercase{onors and} A\MakeLowercase{wards}}
+
+\begin{itemize}
+\itemsep -7pt {}
+  \item Duke CS PhD Fellowship, Duke, 2023-24
+  \item University Honor -- The Bronze Tablet, UIUC, 2023
+  \item C.W. Gear Outstanding Undergraduate Award, UIUC, 2022
+  \item Dean’s List, UIUC, 2019-23
+  \item James Scholar, UIUC, 2019-23
+\end{itemize}
+\end{rSection} 
+
+
+
+\vspace{-5pt}
+\begin{rSection}{S\MakeLowercase{kills}}
+
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Programming Languages & \texttt{Python, C, C++, Java, JavaScript, TypeScript, SQL, HTML, CSS}
+% \\
+% Frameworks and Tools  & \texttt{AWS, MongoDB, Neo4j, Spark, PyTorch, React.js, pandas, NumPy}\\
+% \end{tabular}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{Programming Languages:} 
+& Python, C\!+\!+, Java, JavaScript, TypeScript, SQL, Bash \\
+
+\textbf{LLM Training \& Techniques:}
+& SFT, RLHF, DPO, LoRA, QLoRA, RAG \\
+
+\textbf{Machine Learning \& Data Tools:} 
+& PyTorch, Transformers, vLLM, pandas, NumPy, Spark, scikit-learn, XGBoost \\
+
+\textbf{Full-Stack \& Data Systems:} 
+& AWS, FastAPI, Flask, React.js, Node.js, MySQL, PostgreSQL, MongoDB, Neo4j
+\end{tabular}
+
+% 
+\end{rSection}
+
+% \zcnote{consider going through 30 job postings and find the most demanded skills/technologies, then put another line just for that. E.g., ML algorithms, LLM services and techniques. Depends on which job positions you wanna apply for. } \\
+% \zcnote{I have shortened some wordings, so you should have ample amount of space to put more keywords on your resume to pass screening.} \\
+% \zcnote{You can also have a webpage - only needs a few days to set up. I use Hugo. Happy to answer any questions
+% \begin{itemize}
+%     \item https://github.com/gurusabarish/hugo-profile?tab=readme-ov-file
+%     \item https://github.com/HugoBlox/theme-academic-cv?tab=readme-ov-file
+% \end{itemize}
+% }
+% \zcnote{Good job! My bob is \#1}
+
+\end{document}
