@@ -6,8 +6,12 @@ This repository hosts a static personal website for GitHub Pages.
 
 - `index.html`: Main homepage content.
 - `stylesheet.css`: Styling and responsive layout.
-- `assets/images/profile.jpg`: Profile photo.
-- `assets/images/research-graph.png`: Placeholder research graph image.
+- `assets/images/research/profile.jpg`: Profile photo.
+- `assets/images/research/`: Research images.
+- `assets/images/projects/`: Project images.
+- `assets/images/logos/`: Company logos.
+- `assets/audio/name.mp3`: Pronunciation audio.
+- `assets/docs/Zhuofan_Jia_CV.pdf`: CV.
 - `resume.tex`: Source resume in TeX format.
 
 ## Deploy on GitHub Pages

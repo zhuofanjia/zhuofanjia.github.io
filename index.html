@@ -5,6 +5,7 @@
     <title>Zhuofan Jia</title>
     <meta name="author" content="Zhuofan Jia">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ctext y="0.9em" font-size="90"%3E%E2%9B%84%3C/text%3E%3C/svg%3E'>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
@@ -16,22 +17,36 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">Zhuofan Jia</p>
+                <p class="name" style="text-align: center; margin-bottom: 6px;">Zhuofan Jia</p>
+                <p style="text-align: center; margin-top: 0; color: #666; font-size: 14px;">
+                  <audio id="name-audio" src="assets/audio/name.mp3"></audio>
+                  <button
+                    type="button"
+                    onclick="document.getElementById('name-audio').play()"
+                    style="border: 0; background: transparent; cursor: pointer; padding: 0; margin-right: 0px; font-size: 16px; vertical-align: middle;"
+                    aria-label="Play name pronunciation"
+                    title="Play name pronunciation">🔊</button>
+                  <span style="vertical-align: middle;">Pronounced as JWOH-fahn JYAH</span>
+                </p>
                 <p>
-                  I am a PhD student in Computer Science at Duke University, advised by
-                  Prof. Jian Pei. My research interests are in large language models,
-                  model evaluation and benchmarking, conversational AI, data privacy and
-                  unlearning, uncertainty-aware data valuation, and responsible AI.
+                  Hi, I am a third-year PhD student in Computer Science at <a href="https://www.duke.edu/">Duke University</a>, advised by
+                  <a href="https://ece.duke.edu/people/jian-pei/">Prof. Jian Pei</a>. I received my bachelor's degrees in Computer Science and Mathematics from <a href="https://illinois.edu/"> University of Illinois Urbana-Champaign</a>, where I worked with <a href="https://gangw.cs.illinois.edu/">Prof. Gang Wang</a>.
+                <p>
+                  My research centers on developing a principled understanding of large language models and data-driven machine learning, with the goal of making these models more reliable, trustworthy, and useful in real-world settings.
+                </p>
+                </p>
+                <p style="text-align:center; color: red;">
+                  📌 Seeking research internship opportunities for Summer 2026.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:zhuofan.jia@duke.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="resume.tex">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=uOEyuwsAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="assets/docs/Zhuofan_Jia_CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=uOEyuwsAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/zhuofanjia/">LinkedIn</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="assets/images/profile.jpg">
+                <img style="width:100%;max-width:100%;object-fit: cover;border-radius: 16px;" alt="profile photo" src="assets/images/research/profile.jpg">
               </td>
             </tr>
           </tbody></table>
@@ -41,8 +56,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I am interested in LLM evaluation, multi-party conversation generation,
-                  privacy-preserving language modeling, and uncertainty-aware data valuation.
+                  I am particularly interested in how data shapes model behavior during training and inference, including evaluation and benchmarking for complex conversational settings, privacy and unlearning in language models, and uncertainty-aware methods for data valuation and model assessment.
                 </p>
               </td>
             </tr>
@@ -52,7 +66,7 @@
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="assets/images/research-graph.png" width="160" alt="project placeholder">
+                <img src="assets/images/research/mpceval.jpg" width="160" alt="MPCEval framework">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">MPCEval: A Benchmark for Multi-Party Conversation Generation</span>
@@ -64,15 +78,14 @@
                 <a href="https://arxiv.org/abs/2603.04969">arXiv</a>
                 <p></p>
                 <p>
-                  A unified benchmark for both next-turn prediction and global multi-party conversation evaluation,
-                  with metrics for speaker selection, coherence, novelty, and agenda progression.
+                  A task-aware benchmark for multi-party conversation generation that evaluates both next-turn prediction and full-conversation quality with reproducible, reference-free metrics for speaker behavior, content quality, and their consistency.
                 </p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="assets/images/research-graph.png" width="160" alt="project placeholder">
+                <img src="assets/images/research/scalable-private-llm.jpg" width="160" alt="Our kNN-LM framework">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Scalable Private Information Management in Large Language Models</span>
@@ -81,18 +94,16 @@
                 <br>
                 <em>Under Review (VLDB)</em>, 2026
                 <br>
-                <a href="https://arxiv.org">arXiv</a>
                 <p></p>
                 <p>
-                  A kNN-LM framework that separates public training from private retrieval,
-                  enabling user-level deletion while preserving QA performance.
+                  A kNN-LM-based framework that separates public model training from private-data storage, enabling accurate inference and efficient user-level deletion without model retraining.
                 </p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="assets/images/research-graph.png" width="160" alt="project placeholder">
+                <img src="assets/images/research/shapley.png" width="160" alt="Shapley value on uncertain data comparison plot">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Shapley Value on Uncertain Data</span>
@@ -104,48 +115,26 @@
                 <a href="https://arxiv.org/abs/2601.14543">arXiv</a>
                 <p></p>
                 <p>
-                  An uncertainty-aware Shapley framework for fair data attribution,
-                  with variance-adaptive Monte Carlo estimators for efficient valuation.
+                  A probabilistic data-Shapley framework that models each participant's value as a random variable induced by sampling, and estimates both its expectation and variance with unbiased and variance-efficient Monte Carlo methods.
                 </p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="assets/images/research-graph.png" width="160" alt="project placeholder">
+                <img src="assets/images/research/verisms.jpg" width="160" alt="VeriSMS framework">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">VeriSMS: A Message Verification System for Inclusive Patient Outreach against Phishing Attacks</span>
                 <br>
                 Chenkai Wang, <strong>Zhuofan Jia</strong>, Hadjer Benkraouda, Cody Zevnik, Nicholas Heuermann, Roopa Foulger, Jonathan A. Handler, Gang Wang
                 <br>
-                <em>CHI</em>, 2024
+                <em>Proceedings of ACM CHI Conference on Human Factors in Computing Systems (CHI), 2024</em>
                 <br>
-                <a href="https://dl.acm.org/doi/10.1145/3613904.3642088">paper</a>
+                <a href="https://dl.acm.org/doi/full/10.1145/3613904.3642027">paper</a>
                 <p></p>
                 <p>
-                  An inclusive message verification workflow that helps users detect phishing content
-                  with high precision and strong usability.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="assets/images/research-graph.png" width="160" alt="project placeholder">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Parallelizing Reinforcement Learning</span>
-                <br>
-                Jonathan T. Barron, Dave Golland, Nicholas J. Hay
-                <br>
-                <em>Technical Report</em>, 2009
-                <br>
-                <a href="https://jonbarron.info/">bibtex</a>
-                <p></p>
-                <p>
-                  Markov Decision Problems which lie in a low-dimensional latent space can be decomposed,
-                  allowing modified RL algorithms to run orders of magnitude faster in parallel.
+                  An inclusive patient-outreach verification system that lets users confirm healthcare messages through SMS and phone calls, improving phishing detection without requiring smartphones or extra setup.
                 </p>
               </td>
             </tr>
@@ -155,7 +144,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Projects</h2>
+                <h2>Selected Projects</h2>
               </td>
             </tr>
           </tbody></table>
@@ -164,91 +153,133 @@
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="assets/images/research-graph.png" width="160" alt="project placeholder">
+                <img src="assets/images/projects/fine-tune-slm.svg" width="160" alt="Small LLM performance comparison plot">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Fine-Tuning and Evaluation of Small LLMs</span>
                 <br>
-                <em>Large Language Models</em>, 2025
+                <em>Large Language Models</em>
                 <br>
-                <a href="resume.tex">details</a>
                 <p></p>
                 <p>
-                  Fine-tuned Gemma-3-270M using SFT and LoRA/QLoRA, integrated DPO/RLHF and RAG,
-                  and achieved strong gains on TriviaQA and ARC-C over zero-shot baselines.
+                  A fine-tuned modular Gemma-3-270M system that combines task routing, supervised fine-tuning, knowledge distillation, and retrieval augmentation to improve factual QA, reasoning, and instruction following.
                 </p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="assets/images/research-graph.png" width="160" alt="project placeholder">
+                <img src="assets/images/projects/beyond-binary-truth.png" width="160" alt="project placeholder">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Benchmarking LLM Agents on False Hypothesis Rejection</span>
+                <span class="papertitle">Beyond Binary Truth: Benchmarking the Rigor of LLM Agents in Scientific Hypothesis Verification</span>
                 <br>
-                <em>Large Language Model Agents</em>, 2025
+                <em>Large Language Model Agents</em>
                 <br>
-                <a href="resume.tex">details</a>
                 <p></p>
                 <p>
-                  Built a benchmark for hypothesis falsification and evaluated agent reasoning pipelines
-                  on rejection accuracy, efficiency, and bias.
+                  A benchmark for false-hypothesis rejection that uses controlled claim perturbations to evaluate whether tool-using scientific agents can rigorously reject invalid hypotheses through executable, data-grounded analysis.
                 </p>
               </td>
             </tr>
 
           </tbody></table>
 
-          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td>
-                <h2>Miscellanea</h2>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Professional Experience</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="assets/images/logos/here-logo.png" width="160" alt="HERE Technologies logo">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Software Engineer Intern</span>
+                <br>
+                HERE Technologies · Dynamic Content Team
+                <br>
+                <em>Chicago, IL · Jan 2023 - May 2023</em>
+                <p></p>
+                <p>
+                  Built machine learning solutions for location intelligence, including store-status prediction models with F1 above 95% and privacy-preserving geospatial data processing for customer trip data.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="assets/images/logos/dpi-logo.png" width="160" alt="Discovery Partners Institute logo">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Machine Learning Engineer Intern</span>
+                <br>
+                Discovery Partners Institute · Create Wisdom Team
+                <br>
+                <em>Chicago, IL · Jan 2022 - May 2023</em>
+                <p></p>
+                <p>
+                  Developed an ML-powered medical search platform that combined clinical data, content understanding, and semantic retrieval to improve access to relevant healthcare information.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Academic Service</h2>
+                <p>
+                  Reviewer, ACM Transactions on Knowledge Discovery from Data (TKDD), 2025
+                </p>
               </td>
             </tr>
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-                <div class="colored-box" style="background-color: #aaba9e;">
-                  <h2>Patents</h2>
-                </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="resume.tex">Dwell Time Modelling for Point of Interests (US Patent Application 19/342094, 2025)</a>
-                <br>
-                <a href="resume.tex">Trip Data Privacy Based on Obfuscation (US Patent Application 19/313266, 2025)</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-                <div class="colored-box" style="background-color: #c6b89e;">
-                  <h2>Academic Service</h2>
-                </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="resume.tex">Reviewer, ACM Transactions on Knowledge Discovery from Data (TKDD), 2025</a>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Teaching</h2>
+                <p>
+                  Teaching Assistant, <a href="https://sites.duke.edu/compsci_516_01_sp25/">CompSci 516: Database Systems</a>, Duke University, Spring 2025
+                  <br>
+                  Teaching Assistant, <a href="https://sites.google.com/view/duke-compsci-316-introtodb-f24/home">CompSci 316: Introduction to Databases</a>, Duke University, Fall 2024
+                  <br>
+                  Course Assistant, <a href="https://courses.grainger.illinois.edu/ece449/sp2023/_site/">CS 446: Machine Learning</a>, University of Illinois Urbana-Champaign, Spring 2023
+                  <br>
+                  Course Developer, <a href="https://theorielearn.github.io/">CS 374: Algorithms and Models of Computation</a>, University of Illinois Urbana-Champaign, Spring 2023
+                  <br>
+                  Course Developer, <a href="https://theorielearn.github.io/">CS 374: Algorithms and Models of Computation</a>, University of Illinois Urbana-Champaign, Fall 2022
+                  <br>
+                  Course Associate, <a href="https://cs125-old.cs.illinois.edu/info/syllabus/">CS 125: Intro to Computer Science</a>, University of Illinois Urbana-Champaign, Fall 2020
+                  <br>
+                  Course Assistant, <a href="https://cs125-old.cs.illinois.edu/info/syllabus/">CS 125: Intro to Computer Science</a>, University of Illinois Urbana-Champaign, Spring 2020
+                </p>
               </td>
             </tr>
+          </tbody></table>
 
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-                <div class="colored-box" style="background-color: #edd892;">
-                  <h2>Teaching</h2>
-                </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="resume.tex">Teaching Assistant, CompSci 516 Database Systems, Duke (Spring 2025)</a>
-                <br>
-                <a href="resume.tex">Teaching Assistant, CompSci 316 Introduction to Databases, Duke (Fall 2024)</a>
-                <br>
-                <a href="resume.tex">Course Assistant, CS 446 Machine Learning, UIUC (Spring 2023)</a>
-                <br>
-                <a href="resume.tex">Course Developer, CS 374 Intro to Algorithms and Models of Computation, UIUC (Fall 2022 - Spring 2023)</a>
-                <br>
-                <a href="resume.tex">Course Assistant, CS 125 Intro to Computer Science, UIUC (Spring 2020 - Fall 2020)</a>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Honors &amp; Awards</h2>
+                <p>
+                  Graduate School Fellowship, Duke University, 2023 - 2024
+                  <br>
+                  University Honor (The Bronze Tablet), University of Illinois Urbana-Champaign, 2023
+                  <br>
+                  C.W. Gear Outstanding Undergraduate Award, University of Illinois Urbana-Champaign, 2022
+                  <br>
+                  Dean's List, University of Illinois Urbana-Champaign, 2019 - 2023
+                  <br>
+                  James Scholar, University of Illinois Urbana-Champaign, 2019 - 2023
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -258,7 +289,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Last updated: April 2026. Original template based on <a href="https://github.com/jonbarron/jonbarron.github.io">jonbarron/jonbarron.github.io</a>.
+                  Last updated: April 2026. © 2026 Zhuofan Jia. Original template based on <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.
                 </p>
               </td>
             </tr>
